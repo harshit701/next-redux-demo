@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -87,12 +87,12 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 a {
@@ -104,4 +104,63 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.red {
+  color: red;
+}
+
+button {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #00000010;
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #00000010;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a5568; /* Background color */
+  color: #f8f9fa; /* Text color */
+  padding: 1rem 2rem; /* Adjust padding as needed */
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul * {
+  display: inline;
+}
+
+.navbar ul li {
+  margin: 1rem; /* Adjust spacing between items */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f8f9fa; /* Text color */
+}
+
+.container {
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 20px; /* Add padding to the sides of the container */
+  box-sizing: border-box; /* Ensure that padding and border are included in the total width */
 }
